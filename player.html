@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="player.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="#" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+                            <div class="video-container">
+                                <video width="100%" controls>
+                                    <source src="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s"
+                                        type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://dafftube.org/video-links/#fvp_Sample_1280x720_mp4,5s">
+                            <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const thumbnails = document.querySelectorAll(".carousel__thumbnails li");
+
+            thumbnails.forEach((thumbnail, index) => {
+                thumbnail.addEventListener("click", function () {
+                    // Pause all videos
+                    document.querySelectorAll(".carousel__slide video").forEach(video => {
+                        video.pause();
+                    });
+
+                    // Play the corresponding video
+                    const video = document.querySelector(`#slide-${index + 1} video`);
+                    if (video) {
+                        video.play();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
