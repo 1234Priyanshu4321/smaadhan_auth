@@ -152,7 +152,7 @@ label {
   border-bottom-color: #151111;
 }
 
-.input-field.active + label {
+.input-field.active+label {
   font-size: 0.75rem;
   top: -2px;
 }
@@ -368,10 +368,11 @@ main.sign-up-mode .carousel {
     width: 100%;
   }
 }
-.image
-{
-background-color: black;
+
+.image {
+  background-color: black;
 }
+
 @media (max-width: 530px) {
   main {
     padding: 1rem;
@@ -400,5 +401,105 @@ background-color: black;
 
   form {
     padding: 1rem 2rem 1.5rem;
+  }
+}
+
+/* OTP verification pop-up styles */
+.otp-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.otp-box {
+  width: 800px;
+  height: 600px;
+  text-align: left;
+  position: relative;
+}
+
+.close-btn {
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #151111;
+}
+
+.otp-input-container {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  margin-top: 200px;
+  margin-bottom: 40px;
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.otp-submit {
+  padding: 10px;
+  background-color: #151111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.otp-submit:hover {
+  background-color: #8371fd;
+}
+
+/* Blur effect for the main content when OTP pop-up is displayed */
+.main-blur {
+  filter: blur(5px);
+  /* Adjust the blur amount as needed */
+  transition: filter 0.01s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .otp-popup {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 530px) {
+  .otp-popup {
+    padding: 50px;
+  }
+
+  .otp-box {
+    text-align: center;
+  }
+
+  .otp-input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .otp-input {
+    width: 100%;
+    max-width: 60px;
+  }
+
+  .otp-submit {
+    margin-top: 20px;
   }
 }
