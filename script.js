@@ -117,5 +117,4 @@ function updateThumbnailDisplay() {
     videosContainer.style.transform = `translateX(${translationValue})`;
 }
 
-// Initial thumbnail display
 updateThumbnailDisplay();
